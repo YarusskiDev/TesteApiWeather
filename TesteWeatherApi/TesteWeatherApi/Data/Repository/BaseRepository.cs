@@ -43,7 +43,7 @@ namespace TesteWeatherApi.Data.Repository
             return await _context.Set<Entity>().ToListAsync();
         }
 
-        public async Task<Entity> Update(Entity entity, long id)
+        public async Task<Entity> Update(Entity entity, int id)
         {
             var exist = await _context.Set<Entity>().FindAsync(id);
             if (exist != null)

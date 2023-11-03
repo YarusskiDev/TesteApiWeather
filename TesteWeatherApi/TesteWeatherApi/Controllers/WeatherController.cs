@@ -38,7 +38,7 @@ namespace TesteWeatherApi.Controllers
                 {
                     var cacheEntryOptions = new MemoryCacheEntryOptions
                     {
-                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(20)
                     };
 
                     _cache.Set(city, result, cacheEntryOptions);
