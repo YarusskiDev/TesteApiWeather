@@ -5,6 +5,7 @@ namespace TesteWeatherApi.Interfaces.Repositories
 {
     public interface IRepositoryWeather : IBaseRepository<BaseWeatherEntity>
     {
-        Task<BaseWeatherEntity> GetValidator(BaseWeatherEntity entity);
+        Task<BaseWeatherEntity> GetValidator(string city);
+        Task<bool> CheckCity(string city);
     }
 }

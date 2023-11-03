@@ -13,8 +13,8 @@ namespace TesteWeatherApi.DependencyInjection
             services.AddScoped<IRepositoryWeather,WeatherRepository>();
             services.AddScoped<IServiceWeather, ServiceWeather>();
             services.AddScoped<ContextEntity>();
+            services.AddMemoryCache();
             return services;
-
         }
     }    
 }   

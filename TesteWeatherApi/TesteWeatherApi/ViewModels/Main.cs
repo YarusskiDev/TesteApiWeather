@@ -18,7 +18,7 @@ namespace TesteWeatherApi.ViewModels
         public float Temp_max { get; set; }
 
         [JsonProperty(PropertyName = "pressure")]
-        public int Rressure { get; set; }
+        public int Pressure { get; set; }
 
         [JsonProperty(PropertyName = "humidity")]
         public int Humidity { get; set; }

@@ -12,7 +12,7 @@ using TesteWeatherApi.Data.Context;
 namespace TesteWeatherApi.Migrations
 {
     [DbContext(typeof(ContextEntity))]
-    [Migration("20231031090806_bd")]
+    [Migration("20231102053543_bd")]
     partial class bd
     {
         /// <inheritdoc />
